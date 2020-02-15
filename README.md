@@ -1,6 +1,7 @@
 # Windows-related stuff
 
 ## **Windows Terminal** [profile](/windows/profiles.json)
+### currently, version: 0.9.433.0
 > To open your **profile**:
 > 1. click the _down carret_ at the end of the Tabs
 > 2. choose **Settings**
