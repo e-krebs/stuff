@@ -48,3 +48,20 @@ To do do something similar to what I've described above for [PowerShell](#powers
 # assuming your 'projects' folder is relative to your personal folder (/mnt/c/Users/{username})
 cd projects && ls
 ```
+
+## Wsl startup script
+> make sure your startup script is executable: `chmod +x /path/to/my/script.sh`
+
+if your startup script needs `sudo` privileges, run `sudo visudo`, and at the end of the file, add:
+```sh
+%sudo ALL=NOPASSWD:/path/to/my/script.sh
+```
+
+Then in the case of wsl, you can write a [Windows startup script](#windows-startup-script) that will run your linux script :
+```cmd
+wsl sudo /path/to/my/script.sh
+```
+
+### redis
+the main startup script I'm using is for lanching **redis**:
+[windows script](/wsl/startup-redis.cmd) & [linux script](/wsl/start-redis.sh)
