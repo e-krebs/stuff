@@ -20,3 +20,9 @@ This profile does:
 > 2. open a new Windows Terminal
 
 Full profile doc [here](https://github.com/microsoft/terminal/blob/master/doc/cascadia/SettingsSchema.md).
+
+## Windows [startup script](/windows/startup.cmd)
+Any script you want to be **executed at startup** can be placed in `C:\Users\{username}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
+
+For each script you put in that folder, when opening a new Windows session, you will briefly see a terminal being opened (and then closed when the script has finished running).
+> You can even run a `wsl` command here.
