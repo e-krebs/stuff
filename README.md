@@ -21,6 +21,15 @@ This profile does:
 
 Full profile doc [here](https://github.com/microsoft/terminal/blob/master/doc/cascadia/SettingsSchema.md).
 
+## PowerShell [startup script](/windows/profile.ps1)
+> I'm used to put all my projects in `C:\Projects`.
+
+This script does:
+ - **open** every new Powershell window in `C:\Projects`
+ - **list** this folder content
+
+This script has to be at the following path: `C:\Users\{username}\Documents\WindowsPowerShell\profile.ps1`
+
 ## Windows [startup script](/windows/startup.cmd)
 Any script you want to be **executed at startup** can be placed in `C:\Users\{username}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
 
