@@ -35,3 +35,16 @@ Any script you want to be **executed at startup** can be placed in `C:\Users\{us
 
 For each script you put in that folder, when opening a new Windows session, you will briefly see a terminal being opened (and then closed when the script has finished running).
 > You can even run a `wsl` command here.
+
+# Wsl-related stuff
+> **wsl** stands for _Windows Sub-system for Linux_,
+> cf. [Microsoft Doc](https://docs.microsoft.com/en-us/windows/wsl/about) 
+
+## Bash startup script
+To run something every time a new bash shell is opened, you just have to add it to `~/.bashrc`.
+
+To do do something similar to what I've described above for [PowerShell](#powershell-startup-script), just add this line at the end of your `~.bashrc` file:
+```sh
+# assuming your 'projects' folder is relative to your personal folder (/mnt/c/Users/{username})
+cd projects && ls
+```
