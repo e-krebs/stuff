@@ -1,12 +1,12 @@
 # Windows-related stuff
 
-## **Windows Terminal** [profile](/windows/profiles.json)
+## **Windows Terminal** [settings](/windows/settings.json)
 ### currently, version: 0.9.433.0
-> To open your **profile**:
+> To open your **settings**:
 > 1. click the _down carret_ at the end of the Tabs
 > 2. choose **Settings**
 
-This profile does:
+This settings do:
 - uses _Fira code_ as a font
 - set some keybindings:
   - _**close** Tab_: <kbd>ctrl</kbd>+<kbd>w</kbd>,
@@ -15,11 +15,11 @@ This profile does:
   - _move **focus right**_: <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>right</kbd>,
   - _move **focus left**_: <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>left</kbd>
 
-> To **reset** your current profile:
-> 1. empty the existing profile and save
+> To **reset** your current settings:
+> 1. empty the existing settings and save
 > 2. open a new Windows Terminal
 
-Full profile doc [here](https://github.com/microsoft/terminal/blob/master/doc/cascadia/SettingsSchema.md).
+Full settings doc [here](https://github.com/microsoft/terminal/blob/master/doc/cascadia/SettingsSchema.md).
 
 ## PowerShell [startup script](/windows/profile.ps1)
 > I'm used to put all my projects in `C:\Projects`.
