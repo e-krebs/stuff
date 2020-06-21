@@ -65,3 +65,28 @@ wsl sudo /path/to/my/script.sh
 ### redis
 the main startup script I'm using is for lanching **redis**:
 [windows script](/wsl/startup-redis.cmd) & [linux script](/wsl/start-redis.sh)
+
+# Git-related stuff
+
+## PowerShell
+I'm using [posh-git](https://github.com/dahlbyk/posh-git) to display the current folder git status in the PowerShell prompt.
+To install, run as an Admin:
+```ps
+Install-Module posh-git
+```
+Then you can run:
+```ps
+Add-PoshGitToProfile
+```
+This should add a line to your PowerShell profile (in `C:\Users\{username}\Documents\WindowsPowerShell`):
+```ps
+Import-Module posh-git
+```
+
+After that, I you want to customize what posh-git displays, you can add it to your profile after that line, in my case:
+```ps
+$GitPromptSettings.EnableFileStatus = $false
+```
+
+## Wsl
+(to be written)
