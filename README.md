@@ -78,7 +78,7 @@ Then you can run:
 ```ps
 Add-PoshGitToProfile
 ```
-This should add a line to your PowerShell profile (in `C:\Users\{username}\Documents\WindowsPowerShell`):
+This should add a line to your [PowerShell profile](/windows/Microsoft.PowerShell_profile.ps1) (type `$profile` to get the path):
 ```ps
 Import-Module posh-git
 ```
