@@ -89,4 +89,8 @@ $GitPromptSettings.EnableFileStatus = $false
 ```
 
 ## Wsl
-(to be written)
+to display the current folder git status in the wsl terminal, add these simple two lines in your [`.bashrc`](/wsl/.bashrc):
+```sh
+parse_git_branch() { git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/' ; }
+export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+```
