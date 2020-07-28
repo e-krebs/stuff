@@ -1,17 +1,19 @@
 # Windows-related stuff
 
 ## **Windows Terminal** [settings](/windows/settings.json)
-### currently, version: 0.9.433.0
+### currently, version: 1.1.2021.0
 > To open your **settings**:
 > 1. click the _down carret_ at the end of the Tabs
 > 2. choose **Settings**
 
 This settings do:
 - uses _Fira code_ as a font
+- uses _Tango Dark_ theme + dark background
 - set some keybindings:
-  - _**close** Tab_: <kbd>ctrl</kbd>+<kbd>w</kbd>,
   - _**duplicate** Tab_: <kbd>ctrl</kbd>+<kbd>t</kbd>,
-  - _**split** Pane_ vertically: <kbd>ctrl</kbd>+<kbd>p</kbd> (new tab will be _wsl_),
+  - _**close** Tab_: <kbd>ctrl</kbd>+<kbd>w</kbd>,
+  - _**duplicate** Pane_: <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>t</kbd>,
+  - _**close** Pane_: <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>w</kbd>,
   - _move **focus right**_: <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>right</kbd>,
   - _move **focus left**_: <kbd>ctrl</kbd>+<kbd>shift</kbd>+<kbd>left</kbd>
 

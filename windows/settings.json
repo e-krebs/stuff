@@ -30,7 +30,9 @@
       {
           // Put settings here that you want to apply to all profiles
           "fontSize": 11,
-          "fontFace" : "Fira Code"
+          "fontFace" : "Fira Code",
+          "colorScheme": "Tango Dark",
+          "background": "#222"
       },
       "list":
       [
@@ -85,13 +87,11 @@
       // - "split": "auto" makes this pane open in the direction that provides the most surface area.
       // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
       // To learn more about panes, visit https://aka.ms/terminal-panes
-      { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "alt+shift+d" },
+      { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "ctrl+shift+t" },
 
       // Custom keybindings
       { "command": "closeTab", "keys": ["ctrl+w"] },
       { "command": "duplicateTab", "keys": ["ctrl+t"] },
-      { "command": { "action": "splitPane", "split": "auto", "profile": "{2c4de342-38b7-51cf-b940-2309a097f518}" }, "keys": ["ctrl+p"]},
-      { "command": { "action": "splitPane", "split": "auto", "profile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}" }, "keys": ["ctrl+shift+p"]},
       { "command": { "action": "moveFocus", "direction": "right"}, "keys": ["ctrl+shift+right"] },
       { "command": { "action": "moveFocus", "direction": "left"}, "keys": ["ctrl+shift+left"] }
   ]
