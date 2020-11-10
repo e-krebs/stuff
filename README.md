@@ -1,3 +1,19 @@
+# Install
+## Windows
+to install dependencies on a new system, run **as an administrator**:
+```ps1
+# this will install dependencies and/or open links to install dependencies
+./install.sh
+```
+then to bind the different settings/profiles, you can run (still **as an administrator**)
+```ps1
+# this will create symlinks
+./bind.sh
+```
+
+## Wsl
+> TODO, cf. https://github.com/aseure/configs
+
 # Windows-related stuff
 
 ## **Windows Terminal** [settings](/windows/settings.json)
